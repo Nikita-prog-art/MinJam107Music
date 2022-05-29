@@ -1,2 +1,3 @@
 # MinJam107Music
-Game for 107 MinJam with theme music and limitaion Garavity control
+A game in which you control a green block that has a superpower - gravity control.
+Use G to pull the notes to the mouse
