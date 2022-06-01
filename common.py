@@ -9,9 +9,9 @@ space_between = (cell_size - tile_size) / 2
 
 
 class Pos(NamedTuple):
-    x: int
-    y: int
+	x: int
+	y: int
 
 
 def to_surf(path: str) -> pygame.surface.Surface:
-    return pygame.image.load("res/" + path).convert_alpha()
+	return pygame.image.load("res/" + path).convert_alpha()
