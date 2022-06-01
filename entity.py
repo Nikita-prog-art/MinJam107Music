@@ -11,16 +11,12 @@ import pygame
 
 from common import *
 
-id = 0
 rect_entities = []
 notes = []
 
 
 class Base_entity:
     def __init__(self, texture: str) -> None:
-        global id
-        self.id = id
-        id += 1
         self.texture = to_surf(texture)
 
     def to_crt(self):
@@ -48,7 +44,7 @@ class Box_entity(Base_entity):
 
     def check_collision(self):
         for ent in rect_entities:
-            if (self.id != ent.id) and (self.b_to_crt() == ent.b_to_crt()):
+            if self is not ent and (self.b_to_crt() == ent.b_to_crt()):
                 return True
         return False
 

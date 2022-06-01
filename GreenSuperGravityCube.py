@@ -204,7 +204,6 @@ while gameRunning:
         gravity_superpower_runned = False
         i = 0
         score = 0
-        entity.id = 0
         entity.rect_entities = []
         entity.notes = []
     My_clock.tick(30)
