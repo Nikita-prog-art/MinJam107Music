@@ -25,8 +25,8 @@ def get_text_surf(text: str):
 
 
 def draw_map():
-    for y in range(1, cell_width - 1):
-        for x in range(1, cell_height - 1):
+    for y in range(1, cell_height - 1):
+        for x in range(1, cell_width - 1):
             draw_rect(
                 x * cell_size + space_between,
                 y * cell_size + space_between,
